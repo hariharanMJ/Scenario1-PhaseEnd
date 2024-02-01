@@ -36,7 +36,7 @@ public class BuyNowPageTest {
 
 	@Then("User clicks on the Buy Now button")
 	public void user_clicks_on_the_buy_now_button() throws InterruptedException {
-	   WebElement buynowBtn = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div/header/div[2]/div[2]/div/button/span"));
+	   WebElement buynowBtn = driver.findElement(By.xpath("//span[normalize-space()='Buy Now']"));
 	   buynowBtn.click();
 	   Thread.sleep(3000);
 	}
